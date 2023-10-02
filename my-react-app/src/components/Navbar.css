@@ -1,0 +1,40 @@
+.navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: none;
+    margin: 0;
+    /* margin-left: 65%; */
+    padding: 0;
+    /* width: 35%; */
+    width: 100%;
+    background-color: black;
+    /* height: 100%;  */
+    /* position: fixed;
+    overflow: auto; */
+    text-align: center;
+    font-weight: bolder;
+}
+.owner{
+    text-align: center;
+    color: white;
+    padding: 20%;
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   text-shadow: 0px 0px 60px palevioletred;
+   line-height: 4rem;
+}
+.socials{
+    display: flex;
+    gap: 2rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+.pages{
+    color: palevioletred;
+    list-style: circle;
+}
+.page{
+    color: white;
+}
+.page :hover{
+    color: palevioletred;
+}
