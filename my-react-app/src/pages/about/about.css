@@ -1,0 +1,61 @@
+.imi{
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+}
+.mit{
+    color: white;
+    /* text-align: center; */
+    padding: 4rem;
+    font-size: 9rem;
+}
+.ab{
+    /* border: 3px solid palevioletred; */
+    background-color: black;
+    text-decoration: overline underline solid palevioletred;
+}
+.iconet{
+    border: 3px solid black;
+    padding: 2rem;
+}
+.signature{
+    font-style: oblique;
+    text-align: center;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    text-decoration: overline underline solid palevioletred;
+}
+.info{
+    text-align: center;
+    margin-top: 10rem;
+}
+.tixt{
+    max-width: 80vw;
+    text-align: center;
+    justify-content: center;
+}
+.tt{
+    height: 20vh;
+}
+
+/* #about{
+    animation-duration: 10s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75%{
+        font-size: 200%;
+        margin-left: 25%;
+        width: 120%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+} */

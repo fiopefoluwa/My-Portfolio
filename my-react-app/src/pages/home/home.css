@@ -1,0 +1,81 @@
+
+.inner-container{
+    padding: 4rem;
+    font-size: 6rem;
+    position:relative ;
+}
+.relate{
+    font-size: 7rem;
+    color: black;
+    text-align: center;
+    text-decoration: underline solid palevioletred;
+}
+.girl{
+    height: 100vh;
+    width: 20vw;
+    border: 3px solid black;
+}
+.img-respon{
+  display: none;
+}
+.inner-container1{
+  display: none;
+}
+.surname{
+  animation-duration: 3s;
+  animation-name: surname;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes surname{
+  from{
+    margin-left: 100%;
+  }
+  75%{
+
+  }
+  to{
+    margin-left: 0%;
+  }
+}
+.firstname{
+  animation-name: firstname;
+  animation-duration: 10s;
+}
+@keyframes firstname{
+  from{
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  #home{
+    height: 100%;
+  }
+  .girl{
+    display: none;
+  }
+  .inner-container{
+    padding:5rem;
+    display: none;
+  }
+  .type{
+    display: none;
+  }
+  .respon{
+    width: 60px;
+  }
+  .img-respon{
+    display: flex;
+    justify-content: space-between;
+  }
+  .inner-container1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    gap: 30rem;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  }
+}

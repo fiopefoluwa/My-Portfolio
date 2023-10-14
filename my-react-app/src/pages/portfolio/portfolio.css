@@ -1,0 +1,25 @@
+.portf{
+    border: 8px solid black;
+    /* height: 23vh; */
+}
+.mio{
+    border: 3px ;
+    padding: .2rem;
+    /* background-color: palevioletred; */
+    width:50vw;
+}
+.portt{
+    font-size:5rem;
+    letter-spacing: 5rem;
+}
+.wait{
+    text-align: center;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 1400px){
+    .portt{
+        letter-spacing: -.7rem;
+        font-style: oblique;
+    }
+}
