@@ -2,49 +2,43 @@ import React from 'react';
 import './portfolio.css';
 import Card from '../../components/Card/card';
 import { motion } from 'framer-motion';
-import landingpageproject from '../images/landingpage.png';
-import agecalculator from '../images/agecalculator.png';
-import tipcalculator from '../images/tipcalculator.png';
-import resultsummary from '../images/resultsummary.png';
-import form from '../images/form.png';
-import portfi from '../images/portfolio.jpeg';
 
 const Portfolio = () => {
   const projects = [
     {
       title: 'Landing Page',
       description: 'First page of a Website',
-      imageUrl: { landingpageproject },
+      imageUrl: './src/images/landingpage.png',
       buttonText: 'View Project',
     },
     {
       title: 'Age Calculator',
       description: 'You want to know your age?',
-      imageUrl: { agecalculator },
+      imageUrl: './src/images/agecalculator.png',
       buttonText: 'View Project',
     },
     {
       title: 'Tip Calculator',
       description: 'Tip Tip Tip!!',
-      imageUrl: { tipcalculator },
+      imageUrl: './src/images/tipcalculator.png',
       buttonText: 'View Project',
     },
     {
       title: 'Result Summary',
       description: 'What did I get?',
-      imageUrl: { resultsummary },
+      imageUrl: './src/images/resultsummary.png',
       buttonText: 'View Project',
     },
     {
       title: 'Form',
       description: 'Fill up.',
-      imageUrl: { form },
+      imageUrl: './src/images/form.png',
       buttonText: 'View Project',
     },
     {
       title: 'Hmm',
       description: 'Loading!!!!.',
-      imageUrl: { portfi },
+      imageUrl: './src/images/portfolio.jpeg',
       buttonText: 'View Project',
     },
   ];
