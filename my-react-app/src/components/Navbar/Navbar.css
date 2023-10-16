@@ -47,7 +47,7 @@
 
 @media screen and (max-width:1000px) {
     .navbar{
-        width: 400px;
+        width: 100px;
         display: flex;
         justify-content: center;
     }
@@ -58,10 +58,22 @@
     .scroll{
         display: none;
     }
+    fieldset{
+        display: none;
+    }
+    .own{
+       display: none;
+    }
+    .listes{
+        display: flex;
+    }
 }
 @media screen and (max-width:600px) {
     .navbar{
-        width: 100vh;
+        width: 100vw;
+    }
+    .own {
+     display: none;
     }
 }
 

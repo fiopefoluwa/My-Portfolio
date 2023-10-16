@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="big-screen">
           <div>
             <p className="owner flex justify-center">
-              <img className="w-[200px] h-[200px]" src={initialss} alt="" />
+              <img className="own w-[200px] h-[200px]" src={initialss} alt="" />
             </p>
 
             <fieldset className="bg-pink-400 p-2">
@@ -24,7 +24,7 @@ const Navbar = () => {
               </legend>
             </fieldset>
           </div>
-          <ul className="grid gap-12">
+          <ul className="listes grid gap-12">
             <li className="pages">
               <Link
                 to="home"

@@ -12,7 +12,7 @@ const Home = () => {
         <div className="img-respon text-black">
           {/* <img className="respon" src="../src/images/harmburger.jpg" alt="" />
           <img className="respon" src="../src/images/initials.jpg" alt="" /> */}
-          <li className="pages">
+          {/* <li className="pages">
             <Link to="home" spy={true} smooth={true} offset={50} duration={800}>
               Home
             </Link>
@@ -71,10 +71,10 @@ const Home = () => {
             >
               Contact
             </Link>
-          </li>
+          </li> */}
         </div>
         <div className=" flex">
-          <div className="">
+          <div className="universe">
             <img src={universe} alt="" className="girl" />
           </div>
           <div className="img-container">

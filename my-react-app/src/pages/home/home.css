@@ -47,6 +47,14 @@
     margin-top: 50%;
   }
 }
+@media screen and (max-width:1000px){
+  .inner-container{
+    font-size: 30px;
+  }
+  .universe{
+    display: none;
+  }
+}
 
 /* @media only screen and (max-width: 1400px){
   #home{
