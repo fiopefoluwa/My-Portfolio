@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import "./contacts.css"
-import { useState } from 'react'
+import "./Contacts.css"
 
 const Contacts = () => {
   return (

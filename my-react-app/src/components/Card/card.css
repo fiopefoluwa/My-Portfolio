@@ -14,19 +14,20 @@
   color: white;
   text-align: center;
 }
+.card-content1 {
+  transition: all 200ms ease-in-out;
+}
+
+.card_container:hover>.card-content1 {
+  height: 100%;
+}
 .card-title1{
   font-size: 1.5rem;
 }
-/* .card-content1{
-  transition: height 0.5s;
-  height: 0;
-}
-.first-card:hover .card-content1{
-  height: 100%;
-} */
+
 .card-button1{
   font-size: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   color:black;
   background-color: white;
   border: 3px solid palevioletred;

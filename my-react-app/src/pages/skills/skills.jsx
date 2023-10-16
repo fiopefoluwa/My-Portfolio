@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './skills.css';
 
 const Skills = () => {
@@ -12,17 +12,32 @@ const Skills = () => {
   ];
 
   const [skills, setSkills] = useState(skillsPercentage);
+  const skillsRef = useRef(null);
 
   useEffect(() => {
-    const updatedSkills = skillsPercentage.map(skill => ({
-      ...skill,
-      percentage: (skill.progress / 100) * 100,
-    }));
-    setSkills(updatedSkills);
+    const handleScroll = () => {
+      // console.log('scrolling')
+      const skillsSectionOffsetTop = skillsRef.current.offsetTop;
+      const scrollY= window.scrollY;
+
+      if (scrollY>= skillsSectionOffsetTop) {
+        const updatedSkills = skillsPercentage.map(skill => ({ 
+          ...skill,
+          percentage:(skill.progress/100) * 100
+        }));
+        setSkills(updatedSkills);
+        // window.location.reload();
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return() => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+   
   }, []);
 
   return (
-    <div id="skills">
+    <div id="skills" ref={skillsRef}>
       <div className="skills-page relative">
         <div className="flex justify-left">
           <div className="qualities ">

@@ -17,7 +17,6 @@ function App() {
     <>
     <PreLoader/>
       <div className="entire">
-            {/* <PreLoader/> */}
           <Navbar/>
         <div>
             <Home/>
