@@ -2,12 +2,12 @@ import React from 'react';
 import './portfolio.css';
 import Card from '../../components/Card/card';
 import { motion } from 'framer-motion';
-import landingpageproject from '../../images/landingpage.png';
-import agecalculator from '../../images/agecalculator.png';
-import tipcalculator from '../../images/tipcalculator.png';
-import resultsummary from '../../images/resultsummary.png';
-import form from '../../images/form.png';
-import portfi from '../../images/portfolio.jpeg';
+import landingpageproject from '../images/landingpage.png';
+import agecalculator from '../images/agecalculator.png';
+import tipcalculator from '../images/tipcalculator.png';
+import resultsummary from '../images/resultsummary.png';
+import form from '../images/form.png';
+import portfi from '../images/portfolio.jpeg';
 
 const Portfolio = () => {
   const projects = [
