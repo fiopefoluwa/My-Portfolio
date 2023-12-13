@@ -17,9 +17,9 @@ const Navbar = () => {
             <fieldset className="bg-pink-400 p-2">
               <legend className="bg-black text-white p-6">
                 <div className="socials">
-                  <p className="overline">Twi.</p>
-                  <p className="overline">Face.</p>
-                  <p className="overline">Insta.</p>
+                  <p className="overline">Fun.</p>
+                  <p className="overline">Love.</p>
+                  <p className="overline">Vibes.</p>
                 </div>
               </legend>
             </fieldset>

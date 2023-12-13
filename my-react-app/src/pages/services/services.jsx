@@ -34,7 +34,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="box flex text-center justify-between underline cursor-pointer text-pink-400 border-pink-400">
+        {/* <div className="box flex text-center justify-between underline cursor-pointer text-pink-400 border-pink-400">
           <Link
             to="portfolio"
             spy={true}
@@ -44,8 +44,8 @@ const Services = () => {
           >
             My Portfolio
           </Link>
-          <p>Download My CV</p>
-        </div>
+         
+        </div> */}
       </div>
     </div>
   );
