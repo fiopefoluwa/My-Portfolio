@@ -3,6 +3,7 @@ import Card from '../../components/Card/card';
 import { motion } from 'framer-motion';
 
 const Portfolio = () => {
+  
   const projects = [
     {
       title: 'Travel Muse',
