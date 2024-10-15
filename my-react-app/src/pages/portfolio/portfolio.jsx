@@ -1,31 +1,35 @@
 import React from 'react';
 import Card from '../../components/Card/card';
 import { motion } from 'framer-motion';
+import TravelMuse from '../../assets/TravelMuse.png'
+import WeatherMax from '../../assets/WeatherMax.png'
+import QueueNot from '../../assets/QueueNot.png'
+import PortfolioA from '../../assets/Portfolio.png'
 
 const Portfolio = () => {
-  
+
   const projects = [
     {
       title: 'Travel Muse',
-      imageUrl: '/assets/TravelMuse.png',
+      imageUrl:TravelMuse,
       buttonText: 'View Project',
       link:'https://travelmuse.vercel.app/'
     },
     {
       title: 'Weather Max',
-      imageUrl: '/assets/WeatherMax.png',
+      imageUrl:WeatherMax,
       buttonText: 'View Project',
       link:'https://weather-max.vercel.app/'
     },
     {
       title: 'Queue Not',
-      imageUrl: '/assets/QueueNot.png',
+      imageUrl: QueueNot,
       buttonText: 'View Project',
       link:'https://github.com/fiopefoluwa/QUEUE'
     },
     {
       title: 'My Portfolio',
-      imageUrl: '/assets/Portfolio.png',
+      imageUrl: PortfolioA,
       buttonText: 'View Project',
       link:'https://my-portfolio-one-flax.vercel.app/'
     },
