@@ -6,25 +6,25 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Travel Muse',
-      imageUrl: './src/assets/TravelMuse.png',
+      imageUrl: '/assets/TravelMuse.png',
       buttonText: 'View Project',
       link:'https://travelmuse.vercel.app/'
     },
     {
       title: 'Weather Max',
-      imageUrl: './src/assets/WeatherMax.png',
+      imageUrl: '/assets/WeatherMax.png',
       buttonText: 'View Project',
       link:'https://weather-max.vercel.app/'
     },
     {
       title: 'Queue Not',
-      imageUrl: './src/assets/QueueNot.png',
+      imageUrl: '/assets/QueueNot.png',
       buttonText: 'View Project',
       link:'https://github.com/fiopefoluwa/QUEUE'
     },
     {
       title: 'My Portfolio',
-      imageUrl: './src/assets/Portfolio.png',
+      imageUrl: '/assets/Portfolio.png',
       buttonText: 'View Project',
       link:'https://my-portfolio-one-flax.vercel.app/'
     },
