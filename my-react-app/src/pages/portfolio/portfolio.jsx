@@ -1,64 +1,46 @@
 import React from 'react';
-import './portfolio.css';
 import Card from '../../components/Card/card';
 import { motion } from 'framer-motion';
 
 const Portfolio = () => {
   const projects = [
     {
-      title: 'Landing Page',
-      description: 'First page of a Website',
-      imageUrl: './src/images/landingpage.png',
+      title: 'Travel Muse',
+      imageUrl: './src/assets/TravelMuse.png',
       buttonText: 'View Project',
+      link:'https://travelmuse.vercel.app/'
     },
     {
-      title: 'Age Calculator',
-      description: 'You want to know your age?',
-      imageUrl: './src/images/agecalculator.png',
+      title: 'Weather Max',
+      imageUrl: './src/assets/WeatherMax.png',
       buttonText: 'View Project',
+      link:'https://weather-max.vercel.app/'
     },
     {
-      title: 'Tip Calculator',
-      description: 'Tip Tip Tip!!',
-      imageUrl: './src/images/tipcalculator.png',
+      title: 'Queue Not',
+      imageUrl: './src/assets/QueueNot.png',
       buttonText: 'View Project',
+      link:'https://github.com/fiopefoluwa/QUEUE'
     },
     {
-      title: 'Result Summary',
-      description: 'What did I get?',
-      imageUrl: './src/images/resultsummary.png',
+      title: 'My Portfolio',
+      imageUrl: './src/assets/Portfolio.png',
       buttonText: 'View Project',
-    },
-    {
-      title: 'Form',
-      description: 'Fill up.',
-      imageUrl: './src/images/form.png',
-      buttonText: 'View Project',
-    },
-    {
-      title: 'Hmm',
-      description: 'Loading!!!!.',
-      imageUrl: './src/images/portfolio.jpeg',
-      buttonText: 'View Project',
+      link:'https://my-portfolio-one-flax.vercel.app/'
     },
   ];
   return (
     <motion.div
       className="home"
-      style={{ backgroundColor: 'white' }}
       initial={{ width: 0 }}
       animate={{ width: '100%' }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <div id="portfolio">
         <div>
-          <div className="portf">
-            <p className="portt ">PORTFOLIO</p>
-            <p className="mio bg-pink-400 border-pink-400"></p>
-            <p className="wait">
-              Stick with me while I take you on a tour of my achievements.
-            </p>
-            <div className="card">
+          <div>
+            <p className="text-xl overline text-[palegreen] text-center lg:text-left lg:leading-[10rem] tracking-[1rem] font-semibold ">PORTFOLIO</p>
+            <div className="grid lg:grid-cols-2 justify-center gap-10 p-6 lg:p-0">
               {projects.map((project) => (
                 <Card project={project} />
               ))}

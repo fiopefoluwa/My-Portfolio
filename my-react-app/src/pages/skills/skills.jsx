@@ -1,14 +1,12 @@
-
 import React, { useState, useEffect, useRef } from 'react';
-import './skills.css';
 
 const Skills = () => {
   const skillsPercentage = [
-    { skill: 'HTML', progress: 80 },
-    { skill: 'CSS', progress: 70 },
+    { skill: 'HTML', progress: 100 },
+    { skill: 'Tailwind CSS', progress: 90 },
     { skill: 'Javascript', progress: 90 },
     { skill: 'Frameworks(ReactJS)', progress: 85 },
-    { skill: 'Responsive Design', progress: 75 },
+    { skill: 'Responsive Design', progress: 90 },
   ];
 
   const [skills, setSkills] = useState(skillsPercentage);
@@ -16,7 +14,6 @@ const Skills = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // console.log('scrolling')
       const skillsSectionOffsetTop = skillsRef.current.offsetTop;
       const scrollY= window.scrollY;
 
@@ -26,7 +23,6 @@ const Skills = () => {
           percentage:(skill.progress/100) * 100
         }));
         setSkills(updatedSkills);
-        // window.location.reload();
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -38,28 +34,15 @@ const Skills = () => {
 
   return (
     <div id="skills" ref={skillsRef}>
-      <div className="skills-page relative">
-        <div className="flex justify-left">
-          <div className="qualities ">
-            <div>S</div>
-            <div>K</div>
-            <div>I</div>
-            <div>L</div>
-            <div>L</div>
-            <div>S</div>
-          </div>
-          <div className="p-4">
-            <h4 className="note text-pink-400">
-              Well, as a FrontEnd Dev
-              <hr />
-              <p className="notes">I have skills and you are definitely eager to know.</p>
-            </h4>
+      <div>
+            <h1 className='text-center lg:absolute overline text-[palegreen] font-semibold tracking-[.2rem] translate-y-4'>Skills</h1>
+          <div className='translate-y-6'>
             <div className="progress p-12 grid gap-10">
               {skills.map((skill, index) => (
                 <div key={index}>
                   <p>{skill.skill}</p>
-                  <div className='box11'>
-                    <div className="box1 border-0 bg-pink-400" style={{ width: `${skill.percentage}%` }}>
+                  <div className='p-2 bg-[rgb(192,178,178)]'>
+                    <div className="border-0 bg-[palegreen]  ease-in-out relative text-center h-7 animate-movePercentage transition-[width] duration-300 ease" style={{width: `${skill.percentage}%` }}>
                       {skill.percentage}%
                     </div>
                   </div>
@@ -67,7 +50,6 @@ const Skills = () => {
               ))}
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
