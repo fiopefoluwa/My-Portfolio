@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import TravelMuse from '../../assets/TravelMuse.png'
 import WeatherMax from '../../assets/WeatherMax.png'
 import QueueNot from '../../assets/QueueNot.png'
-import PortfolioA from '../../assets/Portfolio.png'
+import PrimeDiscount from '../../assets/PrimeDiscount.png'
 
 const Portfolio = () => {
 
@@ -28,10 +28,10 @@ const Portfolio = () => {
       link:'https://github.com/fiopefoluwa/QUEUE'
     },
     {
-      title: 'My Portfolio',
-      imageUrl: PortfolioA,
+      title: 'PrimeDiscount Find',
+      imageUrl: PrimeDiscount,
       buttonText: 'View Project',
-      link:'https://my-portfolio-one-flax.vercel.app/'
+      link:'https://www.primediscountfind.com/'
     },
   ];
   return (
